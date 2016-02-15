@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		
+		<!-- My files -->
+		<link rel="stylesheet" type="text/css" href="cssForPersonalSiteV2.css">
+		
+		<script src="jsForSite.js"></script>
+		
+	</head>
+	<body style="background-color:#ffc300;" onload="repositionRelativeElement('emailAddress', 'envelopeImg' ,190, 270);" onresize="repositionRelativeElement('emailAddress', 'envelopeImg' ,190, 270);">
+		<div class="navigationBar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="aRef" onMouseOver="hoverNavLink(this, 'navSwingAnimate');">
+							<a href="#"><h4>Home</h4></a>
+						</div>
+						<div class="aRef">
+							<h4>/</h4>
+						</div>
+						<div class="aRef" onMouseOver="hoverNavLink(this, 'navSwingAnimate');">
+							<a href="#"><h4>About</h4></a>
+						</div>
+						<div class="aRef">
+							<h4>/</h4>
+						</div>
+						<div class="aRef" onMouseOver="hoverNavLink(this, 'navSwingAnimate');">
+							<a href="#"><h4>Online Resume</h4></a>
+						</div>
+						<div class="aRef">
+							<h4>/</h4>
+						</div>
+						<div class="aRef" onMouseOver="hoverNavLink(this, 'navSwingAnimate');">
+							<a href="#"><h4>Contact</h4></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end of nav bar div -->
+		
+		<div class="content">
+			<div class= "container-fluid">
+				<h1>Contact</h1>
+				<div class="container postcard">
+					
+					<img src="http://www.kinvey.com/blog/images/2012/10/postale.png" id="envelopeImg"/>
+				<!--<img class="backImg" src="http://dc429.4shared.com/img/3nOpM_zR/s7/133bdf438b8/FB_Vintage_Frame_4"/>
+					<img class="frontImg" src="http://postalmuseum.si.edu/systemsatwork/images/global/1980_2493_226.png"/>
+					<h5>To: Nurit Rolnik</h5>-->
+					<a href="mailto:nuritrolnik@gmail.com" id="emailAddress"><h6>nuritrolnik@gmail.com</h6></a>
+				</div>
+				
+			</div>
+		</div> <!-- end of content div -->
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
