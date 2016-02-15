@@ -121,11 +121,32 @@ function smoothScrollStep(scrollStep, scrollToElement, scrollFromElement)
 	}
 }
 
-function repositionRelativeElement(ReposeElement, relatElement , leftDist, topDist)
+function repositionRelativeElement(ReposeElement, relativeElement , leftDist, topDist)
 {
 	var myElement = document.getElementById(ReposeElement);
-	var relativeElement = document.getElementById(relatElement);
+	//var relativeElement = document.getElementById(relatElement);
 	myElement.style.left = relativeElement.offsetLeft + leftDist+'px';
 	myElement.style.top = relativeElement.offsetTop + topDist+'px';
+	myElement.style.opacity = "0.9";
+	myElement.style.filter  = 'alpha(opacity=90)';
 	
+	if(!myElement.classList.contains('animateTypeEmail'))
+	{
+		myElement.classList.add('animateTypeEmail');
+	}
+	
+}
+
+function repositionIfLoaded(ReposeElement, relatElement , leftDist, topDist)
+{
+	var relativeElement = document.getElementById(relatElement);
+	
+	if(relativeElement.complete)
+	{
+		repositionRelativeElement(ReposeElement, relativeElement , leftDist, topDist);
+	}
+	else
+	{
+		relativeElement.onload = repositionRelativeElement(ReposeElement, relativeElement , leftDist, topDist);
+	}
 }

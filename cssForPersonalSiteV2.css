@@ -123,6 +123,9 @@ p{
 	filter: opacity(.3);
 }
 
+#emailAddress{
+	opacity:0;
+}
 
 .content h5{
   color: #C0C0C0; 
@@ -143,8 +146,11 @@ p{
 	font-weight:bold;
 	white-space: nowrap;
 	overflow: hidden;
-	width: 30em;
-	animation: type 4s steps(60, end); 
+	width: 30em; 
+}
+
+.animateTypeEmail h6{
+	animation: type 4s steps(60, end);
 }
 
 @keyframes type{ 
