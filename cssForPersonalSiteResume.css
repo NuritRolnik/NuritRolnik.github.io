@@ -1,0 +1,94 @@
+.content #scrollArea{
+	position:absolute; 
+	width:70%; 
+	height: 70%; 
+	overflow:auto;
+	margin-top:1em;
+	/*border-top: 0.4em ridge #696969;
+	border-bottom: 0.2em ridge #696969;
+	border-left: 0.2em ridge #696969;*/
+	border: 0.5em double #adbe38;
+	border-radius:5px;
+	
+}
+
+.content .scrollMenu{
+	float:right;
+	width:27%;
+	height: 70%;
+	margin-top:1em;
+	/*border-top: 0.5em ridge #696969;
+	border-bottom: 0.2em ridge #696969;
+	border-right: 0.2em ridge #696969;*/
+}
+
+.content .scrollMenu .row{
+	border-radius:5px;
+	margin-bottom:15px;
+	background-color:#adbe38;
+}
+
+.content img{
+	opacity:0;
+	width:40%;
+	padding-top:1em;
+	padding-bottom:2em;
+}
+
+.animateType img{
+	animation: imgOp 5s linear 6s;
+	animation-fill-mode: forwards;
+}
+
+.animateType p{
+  white-space: nowrap;
+  overflow: hidden;
+  width: 70em;
+  animation: typeMyResume 3s steps(60, end); 
+}
+
+.animateType p:nth-child(3){
+  animation: typeMyResume2 6s steps(60, end);
+}
+
+.animateType p:nth-child(4){
+  animation: typeMyResume2 10s steps(60, end);
+}
+
+.animateType p:nth-child(5){
+  animation: typeMyResume2 14s steps(60, end);
+}
+
+.animateType p:nth-child(6){
+  animation: typeMyResume2 18s steps(60, end);
+}
+
+.animateType p:nth-child(7){
+  animation: typeMyResume2 24s steps(60, end);
+}
+
+.animateType p span{
+  animation: blink 1s infinite;
+}
+
+@keyframes imgOp{ 
+	to{opacity: .9;}
+} 
+
+@keyframes typeMyResume{ 
+  from { width: 0; } 
+} 
+
+@keyframes typeMyResume2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+#educationDiv , #experienceDiv , #militaryDiv , #expWorkDiv{
+	opacity:0;
+}

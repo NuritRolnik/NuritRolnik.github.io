@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		
+		<!-- My files -->
+		<link rel="stylesheet" type="text/css" href="cssForPersonalSiteV2.css">
+		
+		<script src="jsForSite.js"></script>
+		
+	</head>
+	
+	<body style="background-color:#5F9EA0;">
+		<div class="navigationBar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="aRef" onMouseOver="hoverNavLink(this, 'navSwingAnimate');">
+							<a href="#"><h4>Home</h4></a>
+						</div>
+						<div class="aRef">
+							<h4>/</h4>
+						</div>
+						<div class="aRef" onMouseOver="hoverNavLink(this, 'navSwingAnimate');">
+							<a href="#"><h4>About</h4></a>
+						</div>
+						<div class="aRef">
+							<h4>/</h4>
+						</div>
+						<div class="aRef" onMouseOver="hoverNavLink(this, 'navSwingAnimate');">
+							<a href="#"><h4>Online Resume</h4></a>
+						</div>
+						<div class="aRef">
+							<h4>/</h4>
+						</div>
+						<div class="aRef" onMouseOver="hoverNavLink(this, 'navSwingAnimate');">
+							<a href="#"><h4>Contact</h4></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end of nav bar div -->
+		
+		<div class="content">
+			<div class= "container-fluid">
+				<h1>About</h1>
+				<h3>(AKA "who is Nurit?")</h3>
+				<div class="row">
+					
+					<div class="col-lg-4" id="details">
+						<div class="row">
+							<h2>Basic details</h2>
+						</div>
+						<div class="row">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-8">
+								<div class="aRef">
+									<a href="#"><p>LinkedIn</p></a>
+								</div>
+								<div class="aRef">
+									<p style="color:#FFDEAD">|</p>
+								</div>
+								<div class="aRef">
+									<a href="https://www.facebook.com/nurit.rolnik" target="_blank"><p>Facebook</p></a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-3">
+								<p>Name:</p>
+							</div>
+							<div class="col-sm-4">
+								<p>Nurit Rolnik</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-3">
+								<p>Address:</p>
+							</div>
+							<div class="col-sm-3">
+								<p>Tel Aviv</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-3">
+								<p>E-mail:</p>
+							</div>
+							<div class="col-sm-3">
+								<a href="mailto:nuritrolnik@gmail.com"><p>nuritrolnik@gmail.com</p></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-3">
+								<p>B.Sc:</p>
+							</div>
+							<div class="col-sm-8">
+								<p><span onmouseover="addGpa(this.id)" onmouseout="removeGpa(this.id)" id="compSc">Computer Science</span></p>
+								<p>and <span onmouseover="addGpa(this.id)" onmouseout="removeGpa(this.id)" id="medSt">Media studies</span> (dual degree)</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4" id="pic">
+						<div class="row">
+							<div id="arrow"><h5>This is me -></h5></div>
+							<!--<img src="http://www.devsean.com/images/ThisIsMeArrow.png" id="arrow"/>-->
+							
+						</div>
+						<div class="row">
+							<img src="01347d4.jpg" id="me"/>
+						</div>
+					</div>
+					<div class="col-lg-4" id="longIntro">
+						<h2>The longer version</h2>
+						<p>My passion for web development began when I started studying it through the <a href="http://www.she-codes.org/" target="_blank">"she codes;"</a> organization.</p>
+						<p>Originally, I came for the short 5 meetings, just to see what web development is. Eventually, I found myself staying longer and wanting to learn more and more. I just loved learning new things, discovering something every time, experimenting on my own. And now, more than 3 months after I started, I'm still loving it.</p>
+						<p>This website is not just a showcase of my abilities. It also shows what I can achieve in a short period of time when I'm passionate about something.</p>
+					</div>
+				</div>
+			</div>
+		
+		</div> <!-- end of content div -->
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
