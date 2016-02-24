@@ -21,7 +21,7 @@
 	</head>
 
 	<!--<body style="background-color:#C0D33E;" onload="pageScroll('education');">-->
-	<body style="background-color:#02C9C9;" onload="pageScroll('education');">
+	<body style="background-color:#02C9C9;" onload="addDivNamesToArray(); pageScroll('educationDiv');">
 		<div class="navigationBar">
 			<div class="container-fluid">
 				<div class="row">
@@ -39,7 +39,7 @@
 							<h4>/</h4>
 						</div>
 						<div class="aRef" onMouseOver="hoverNavLink(this, 'navSwingAnimate');">
-							<a href="resume.html"><h4>Online Resume</h4></a>
+							<a href="resumeV2.html"><h4>Online Resume</h4></a>
 						</div>
 						<div class="aRef">
 							<h4>/</h4>
@@ -96,16 +96,16 @@
 				</div>
 				<div class="container scrollMenu">
 					<div class="row">
-						<a href="" onclick="pageScroll('education');return false;"><h3>Education</h3></a>
+						<a href="" onclick="pageScroll('educationDiv');return false;"><h3>Education</h3></a>
 					</div>
 					<div class="row">
-						<a href="" onclick="pageScroll('experience');return false;"><h3>Professional Experience</h3></a>
+						<a href="" onclick="pageScroll('experienceDiv');return false;"><h3>Professional Experience</h3></a>
 					</div>
 					<div class="row">
-						<a href="" onclick="pageScroll('military');return false;"><h3>Military Service</h3></a>
+						<a href="" onclick="pageScroll('militaryDiv');return false;"><h3>Military Service</h3></a>
 					</div>
 					<div class="row">
-						<a href="" onclick="pageScroll('expWork');return false;"><h3>Example of My Work</h3></a>
+						<a href="" onclick="pageScroll('expWorkDiv');return false;"><h3>Example of My Work</h3></a>
 					</div>
 				</div>
 			</div>

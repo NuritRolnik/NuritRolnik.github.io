@@ -1,5 +1,53 @@
 var g_INTERVAL;
 
+(function($)
+{
+    $(window).load(function()
+	{
+        $("#scrollArea").mCustomScrollbar
+			({
+				theme:"rounded-dots",
+				callbacks:
+				{
+					onScroll:function()
+					{
+						/*
+						alert(this.mcs.top);
+						alert("this is div pos " +Math.round($(divElement).position().top));
+						*/
+						
+						var contentTopPos = Math.round((this.mcs.top)*(-1));
+						
+						$('#scrollText').children('div').each(function () 
+						{
+							var myId = $(this).attr('id');
+							var myIdTopPos = Math.round($('#' + myId).position().top);
+							var myIdBottomPos = $('#' + myId + " img:first-of-type").position().top;
+							//var myIdBottomPos = Math.round($('#' + myId).position().bottom);
+							/*
+							if($('#' + myId).is(":mcsInView")) // "this" is the current element in the loop
+							{
+								alert("yes");
+							}
+							*/
+							
+							if(contentTopPos >= myIdTopPos && contentTopPos<=  myIdBottomPos)
+							{
+								$('#' + myId).css({"opacity" : "0.9"});
+								//$('#' + myId).css.filter  = 'alpha(opacity=90)';
+							}
+						});
+					}
+				}
+			
+			});
+	
+	});
+	
+}
+
+)(jQuery);
+
 function hoverNavLink(element, animationName)
 {
 	if(element.classList.contains(animationName))
@@ -50,21 +98,15 @@ function removeGpa(elementId)
 
 function pageScroll(scrollToElement) 
 {	
-	//document.getElementById('scrollArea').scrollTo(0, document.getElementById(scrollToElement).offsetTop);
-	
+	/******* this call before changed scroll to jquery plugin
 	smoothScroll(document.getElementById('scrollArea'), document.getElementById(scrollToElement).offsetTop);
+	*******/
 	
 	var divElement = document.getElementById(scrollToElement+'Div');
+	$("#scrollArea").mCustomScrollbar('scrollTo',Math.round($(divElement).position().top),{scrollEasing:"easeOut"});
 	
-	/*if(divElement.classList.contains('animateType'))
-	{
-		divElement.classList.remove('animateType');
-	}
-	
-	divElement.offsetWidth = divElement.offsetWidth;*/
 	divElement.style.opacity = "0.9";
 	divElement.style.filter  = 'alpha(opacity=90)';
-	/*divElement.classList.add('animateType');*/
 	
 	if(!divElement.classList.contains('animateType'))
 	{
