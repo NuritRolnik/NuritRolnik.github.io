@@ -1,20 +1,4 @@
 
-// (function($)
-// {
-    // $(window).load(function()
-	// {
-        // $(document.body).mCustomScrollbar
-			// ({
-				// theme:"rounded-dots",
-				// advanced:{ autoExpandHorizontalScroll: 1 }
-			// });
-	
-	// });
-	
-// }
-
-// )(jQuery);
-
 function hoverNavLink(element, animationName)
 {
 	if(element.classList.contains(animationName))
@@ -66,7 +50,6 @@ function removeGpa(elementId)
 function repositionRelativeElement(ReposeElement, relativeElement , leftDist, topDist)
 {
 	var myElement = document.getElementById(ReposeElement);
-	//var relativeElement = document.getElementById(relatElement);
 	myElement.style.left = relativeElement.offsetLeft + leftDist+'px';
 	myElement.style.top = relativeElement.offsetTop + topDist+'px';
 	myElement.style.opacity = "0.9";

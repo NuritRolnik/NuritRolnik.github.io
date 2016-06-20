@@ -4,9 +4,6 @@
 	height: 70%; 
 	overflow:auto;
 	margin-top:1em;
-	/*border-top: 0.4em ridge #696969;
-	border-bottom: 0.2em ridge #696969;
-	border-left: 0.2em ridge #696969;*/
 	border: 0.5em double #02a8c9;
 	border-radius:5px;
 	
@@ -17,9 +14,6 @@
 	width:27%;
 	height: 70%;
 	margin-top:1em;
-	/*border-top: 0.5em ridge #696969;
-	border-bottom: 0.2em ridge #696969;
-	border-right: 0.2em ridge #696969;*/
 }
 
 .content .scrollMenu .row{
